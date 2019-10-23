@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+    <form action="https://formspree.io/gav.sistemas@gmail.com" method="POST">
+        <fieldset>
+            <legend>Datos Personales</legend>
+            <br>
+            <label for="nombre">Ingrese nombre completo</label>    
+            <input type="text" name="nombre" id="nombre" placeholder="Ej. Juan Perez" required>
+            <br>
+            <br>
+            <label for="email">Ingrese email</label>
+            <input type="email" name="email" id="email" required>
+            <br>
+            <br>
+            <label for="password">Ingrese Password</label>
+            <input type="password" name="password" id="password" required>
+            <br>
+            <br>
+            <label for="pais">Pais de origen</label>
+            <select name="pais" id="pais">
+                <option>Argentina</option>
+                <option>Chile</option>
+                <option>Uruguay</option>
+                <option>Brasil</option>
+            </select>
+            <br>
+            <br>
+            <label for="comentario">Ingrese sus consultas o comentarios</label>
+            <br>
+            <textarea name="comentario" id="comentario" cols="30" rows="10"></textarea>
+            <br>
+            <label for="sexo">Sexo</label>
+            <input type="radio" name="sexo" id="sexo" value="F">
+            <input type="radio" name="sexo" id="sexo" value="M">
+            <br>
+            <label for="mayoredad">¿Es mayor de Edad?</label>
+            <input type="checkbox" name="mayoredad" id="mayoredad" value="SI">
+            <br>
+            <br>
+            <label for="rango">Grado de conocimiento de HTML5</label>
+            <br>
+            <input type="range" name="rango" id="rango" list="grado">
+            <br>
+            <br>
+            <label> Ingrese fecha y hora
+            <input type="date" name="fecha" id="fecha">
+            <input type="time" name="hora" id="hora">
+            </label>
+            <br>
+            <hr>
+            <br>
+            <input type="submit" value="Enviar">    
+        </fieldset>
+    </form>
+    <datalist id="grado">
+        <option value="0" value="Muy Malo!">
+        <option value="50" value="Bueno">
+        <option value="100" value="Muy Bueno!">
+    </datalist>
+    
+</body>
+</html>
